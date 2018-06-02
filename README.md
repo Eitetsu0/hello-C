@@ -4,16 +4,16 @@
 
 #### 大部分都是《The Programing Language》中出现的练习。
 
-- 书中的例子不少都是以一些linux基础命令来讲的，比如：
-    [cat*.c](./hello/cat1.c)
-    [echo.c](./hello/echo.c)
+- 书中的例子不少都是以一些linux基础命令来讲的，比如：  
+    [cat*.c](./hello/cat1.c)  
+    [echo.c](./hello/echo.c)  
     [grep*.c](./hello/grep0.c)
 
-- 也有基础的算法练习，像：
-    快速排序：[qsort.c](./hello/qsort.c)
-    壳排序：[shellsort.c](./hello/shellsort.c)
-    hash表：[hash.c](./hello/hash.c)
-    逆波兰计算器：[rpcalc.c](./hello/rpcalc.c)
+- 也有基础的算法练习，像：<br/>
+    快速排序：[qsort.c](./hello/qsort.c)<br/>
+    壳排序：[shellsort.c](./hello/shellsort.c)<br/>
+    hash表：[hash.c](./hello/hash.c)<br/>
+    逆波兰计算器：[rpcalc.c](./hello/rpcalc.c)<br/>
     还有一堆处理字符串的练习。
 
 
@@ -28,6 +28,3 @@
     主要是像 fork 、exec 之类的系统调用的练习
 - 使用linux系统调用实现的简单shell：smallsh
 - 演示通过程序溢出注入自己代码例子[yc.c](./yc.c) (其实现在也没弄懂)
-
-
-
