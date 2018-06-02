@@ -10,7 +10,7 @@ int main()
 	char *argv[]={"showenv", NULL},
 	*envp[]={"foo=bar", "bar=foo", NULL};
 	execve("./showenv",argv,envp);
-	perror("exeve failed.");
+	perror("execve failed.");
 	return 0;
 }
 
