@@ -11,6 +11,12 @@ int main()
 		putchar(a%10+'0');
 		a/=10;
 	}
+	for(int i=0;i<10;i++)
+		printf("%c=%d ",'a'+i,*(&a+i));
+	putchar('\n');
+
+	while((c=getchar())!=EOF)
+		putchar(c);
 
 	return 0;
 }
