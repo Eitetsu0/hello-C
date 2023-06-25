@@ -38,3 +38,12 @@ test
 wordstatistic
 yc
 
+rust/*/target
+
+asm/disas
+asm/hello
+asm/helloworld
+asm/max
+ncurses/attr
+rust/hello
+sumn

@@ -6,9 +6,9 @@ int main()
 	uint16_t n=0;
 	uint32_t s=0;
 
-        uint32_t mult(uint16_t a , uint16_t b);
+	uint32_t mult(uint16_t a , uint16_t b);
 
-	scanf("%u",&n);
+	scanf("%hu",&n);  // h for short
 	s=mult(1+n,n);
 	s>>=1;
 	printf("s=%u\n",s);
