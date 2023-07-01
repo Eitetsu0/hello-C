@@ -1,5 +1,6 @@
 [package]
 name = "hello_cargo"
+default-run = "hello_cargo"
 version = "0.1.0"
 authors = ["O-Eitetsu <wtv-cn@126.com>"]
 edition = "2018"
