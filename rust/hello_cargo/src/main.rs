@@ -1,33 +1,37 @@
 use std::io;
 
-fn five() -> i32 {
-    5
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter,
 }
 
 fn main() {
-    for n in 1..5 {
+    let a = [1, 2, 3, 4, 5];
+    for n in a {
         println!("{}", n);
     }
-    let v=five();
-    println!("Hello, world! {v}");
+    for n in a {
+        println!("{}", n);
+    }
 
-    // let guess: u32 = "55".parse().expect("parse failed");
-    let a = [1, 2, 3, 4, 5];
+    let mut s: &str="hello world";
+    println!("s={}", s.replace("o", "i"));
+    // let s= String::from("hello world");
 
-    println!("Please enter an array index.");
+    // s.as_bytes().iter().enumerate()
+    // s.len();
+}
 
-    let mut index = String::new();
-
-    io::stdin()
-        .read_line(&mut index)
-        .expect("Failed to read line");
-
-    let index: usize = index
-        .trim()
-        .parse()
-        .expect("Index entered was not a number");
-
-    let element = a[index];
-
-    println!("The value of the element at index {index} is: {element}")
+fn value_in_cents(coin: Coin) -> u8 {
+    match coin {
+        Coin::Penny => {
+            println!("Lucky penny!");
+            1
+        }
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter => 25,
+    }
 }
